@@ -1,19 +1,19 @@
 import Profile from './Profile';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 export default ProfileList;
 
 function ProfileList({ items }) {
   return (
     <div>
       <Profile
-        ImageSrc={avatar}
-        alt={username}
-        title={username}
-        tag={tag}
-        location={location}
-        followers={followers}
-        Views={views}
-        Likes={likes}
+        ImageSrc={items.avatar}
+        alt={items.username}
+        title={items.username}
+        tag={items.tag}
+        location={items.location}
+        followers={items.followers}
+        Views={items.views}
+        Likes={items.likes}
       />
     </div>
   );
